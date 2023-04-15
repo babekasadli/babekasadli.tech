@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #03191b;
     color: white;
     font-family: 'Lato', sans-serif;
 }
-h1, h3{
+
+h1,
+h3 {
     text-align: center;
 }
-.background{
+
+.background {
     position: absolute;
     z-index: -1;
     left: 0;
     top: 0;
     width: 100%;
 }
-.profile{
+
+.profile {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -26,14 +32,16 @@ h1, h3{
     display: block;
     width: 150px;
 }
-.social{
+
+.social {
     margin: auto;
     padding-top: 20px;
     width: 300px;
     display: flex;
     justify-content: space-between;
 }
-.social-btn{
+
+.social-btn {
     padding: 10px;
     background-color: lightseagreen;
     border: none;
@@ -45,67 +53,124 @@ h1, h3{
     color: #03191b;
     cursor: pointer;
 }
-.social-btn:hover{
+
+.social-btn:hover {
     background-color: aquamarine;
 }
+
+
 .download {
     margin: auto;
     display: block;
     margin-top: 20px;
-    font-weight: bold;
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
     position: relative;
-    z-index: 0;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
-.contact {
-    margin: auto;
+
+.download:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.download:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.download::before {
+    content: '';
     display: block;
-    margin-top: 20px;
-    font-weight: bold;
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+    width: 0;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
 }
-@media only screen and (min-width: 992px) { /* for desktop */
-    
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.download:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
 }
 
 
-@media only screen and (min-width: 768px) { /* for tablet */
-    .profile{
+@media only screen and (min-width: 992px) {
+    /* for desktop */
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    /* for tablet */
+    .profile {
         width: 100px;
     }
-    .social{
+
+    .social {
         width: 250px;
     }
-    .social-btn{
+
+    .social-btn {
         width: 30px;
         height: 30px;
     }
 }
 
-@media only screen and (max-width: 768px) { /* for phones */
-    .profile{
+@media only screen and (max-width: 768px) {
+
+    /* for phones */
+    .profile {
         width: 60px;
     }
-    .social{
+
+    .social {
         width: 250px;
     }
-    .social-btn{
+
+    .social-btn {
         width: 20px;
         height: 20px;
     }
