@@ -49,7 +49,7 @@ h3 {
 
 .social-btn {
     padding: 10px;
-    background-color: lightseagreen;
+    background-color: aquamarine;
     border: none;
     border-radius: 40px;
     width: 40px;
@@ -60,10 +60,6 @@ h3 {
     cursor: pointer;
 }
 
-.social-btn:hover {
-    background-color: aquamarine;
-}
-
 .download {
     cursor: pointer;
     margin: auto;
@@ -72,7 +68,7 @@ h3 {
     position: relative;
     padding: 10px 20px;
     border-radius: 7px;
-    border: 1px solid rgb(61, 106, 255);
+    border: 1px solid aquamarine;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
@@ -87,7 +83,8 @@ h3 {
 }
 
 .download:hover {
-    background: rgb(61, 106, 255);
+    color: black;
+    background: aquamarine;
     box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
