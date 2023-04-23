@@ -29,8 +29,15 @@ h3 {
     text-align: center;
 }
 
+.whitelogo{
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: block;
+}
 .profile {
-    margin-top: 50px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -166,6 +173,10 @@ h3 {
     /* for phones */
     .profile {
         width: 80px;
+    }
+
+    .whitelogo{
+        width: 150px;
     }
 
     .social {
