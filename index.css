@@ -22,7 +22,6 @@ canvas{
     z-index:-1;
     width: 100%;
     height: 100%;
-    
 }
 
 h1,
@@ -60,7 +59,7 @@ h3 {
     cursor: pointer;
 }
 
-.download {
+.normal-btn {
     cursor: pointer;
     margin: auto;
     display: block;
@@ -82,7 +81,7 @@ h3 {
     transition: all 0.2s ease-in;
 }
 
-.download:hover, .social-btn:hover {
+.normal-btn:hover, .social-btn:hover {
     color: black;
     background: aquamarine;
     box-shadow: 0 0 30px 5px rgba(127, 255, 212, 0.815);
@@ -91,13 +90,13 @@ h3 {
     transition: all 0.2s ease-out;
 }
 
-.download:hover::before {
+.normal-btn:hover::before {
     -webkit-animation: sh02 0.5s 0s linear;
     -moz-animation: sh02 0.5s 0s linear;
     animation: sh02 0.5s 0s linear;
 }
 
-.download::before {
+.normal-btn::before {
     content: '';
     display: block;
     width: 0;
@@ -131,7 +130,7 @@ h3 {
     }
 }
 
-.download:active {
+.normal-btn:active {
     box-shadow: 0 0 0 0 transparent;
     -webkit-transition: box-shadow 0.2s ease-in;
     -moz-transition: box-shadow 0.2s ease-in;
